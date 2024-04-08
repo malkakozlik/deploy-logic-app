@@ -12,7 +12,7 @@
             "value": "westeurope"
         },
         "workflows_logic_app_name": {
-            "value": "logic-app-storage-management"
+            "value": "logic-app-try"
         }
     }
 }
