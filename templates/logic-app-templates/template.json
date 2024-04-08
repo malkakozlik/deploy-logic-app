@@ -20,7 +20,7 @@
         "sites_func_get_subscription_list_externalid": {
             "type": "string"
         },
-        "sites_func_sending_excel_by_email_and_mark_storages_for_deletion_externalid": {
+        "sites_func_send_excel_mark_delete_externalid": {
             "type": "string"
         },
         "sites_func_check_storage_externalid": {
@@ -362,7 +362,7 @@
                             "inputs": {
                                 "body": "@outputs('Compose_to_sending-excel-by-email-and-mark-storages-for-deletion')",
                                 "function": {
-                                    "id": "[concat(parameters('sites_func_sending_excel_by_email_and_mark_storages_for_deletion_externalid'), '/functions/HttpTrigger1')]"
+                                    "id": "[concat(parameters('sites_func_send_excel_mark_delete_externalid'), '/functions/HttpTrigger1')]"
                                 }
                             }
                         },

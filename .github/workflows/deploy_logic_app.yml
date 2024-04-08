@@ -1,4 +1,4 @@
-name: "Deploy storage-automation logic-app"
+name: "🚀 Deploy storage-automation logic-app"
 
 on:
   workflow_dispatch:
@@ -14,13 +14,15 @@ jobs:
 
     steps:
 
-    - uses: actions/checkout@main
+    - name: 📂 Checkout repository
+      uses: actions/checkout@main
       
-    - uses: azure/login@v1
+    - name: 🔑 Login to Azure
+      uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
       
-    - name: Run ARM deploy
+    - name: 🚀 Run ARM deploy
       uses: azure/arm-deploy@v1
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
